@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f6f8fb"/>
+<rect x="48" y="44" width="1440" height="776" rx="18" fill="#ffffff" stroke="#d6dde8"/>
+<rect x="48" y="44" width="1440" height="96" rx="18" fill="#14213d"/>
+<text x="86" y="106" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">观点辩论与风险控制</text>
+<text x="86" y="178" font-family="Arial, sans-serif" font-size="24" fill="#355070">正面观点、非正面观点、综合判断和失效模式。</text>
+<text x="86" y="220" class="body">正面：事件结果和首个流动市场反应必须相互确认。</text><text x="86" y="270" class="body">非正面：共识过期、仓位拥挤、来源质量弱或政策对冲都可能反转交易。</text><text x="86" y="320" class="body">综合：只有当意外、传导和价格行为同向时，才考虑表达观点。</text><text x="86" y="370" class="body">不交易：流动性差，或事件已经被充分定价时，宁可等待。</text>
+<text x="86" y="776" font-family="Arial, sans-serif" font-size="22" fill="#7d8597">本地备用信息图。配置 GPT Image 后可替换为生成图片。</text>
+</svg>

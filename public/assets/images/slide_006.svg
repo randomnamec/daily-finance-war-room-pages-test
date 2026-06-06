@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f6f8fb"/>
+<rect x="48" y="44" width="1440" height="776" rx="18" fill="#ffffff" stroke="#d6dde8"/>
+<rect x="48" y="44" width="1440" height="96" rx="18" fill="#14213d"/>
+<text x="86" y="106" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">中国 5 月外汇储备</text>
+<text x="86" y="178" font-family="Arial, sans-serif" font-size="24" fill="#355070">中国 | macro_data | 2026-06-07 待定 | 评分 59</text>
+<text x="86" y="220" class="body">基准情景（45%）：外储接近市场共识，对市场影响有限。</text><text x="86" y="270" class="body">乐观情景（30%）：外储高于预期，且增长不能完全由估值效应解释，说明资金流压力温和。</text><text x="86" y="320" class="body">悲观情景（25%）：外储低于预期，并伴随人民币中间价偏弱或资金流出担忧。</text><text x="86" y="370" class="body">意外触发条件：显著低于共识, 显著高于共识且不能由估值效应解释, 官方对跨境资金流作出后续表态</text>
+<text x="86" y="776" font-family="Arial, sans-serif" font-size="22" fill="#7d8597">本地备用信息图。配置 GPT Image 后可替换为生成图片。</text>
+</svg>

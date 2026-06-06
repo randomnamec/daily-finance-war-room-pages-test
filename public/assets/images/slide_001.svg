@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f6f8fb"/>
+<rect x="48" y="44" width="1440" height="776" rx="18" fill="#ffffff" stroke="#d6dde8"/>
+<rect x="48" y="44" width="1440" height="96" rx="18" fill="#14213d"/>
+<text x="86" y="106" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">每日金融作战室测试</text>
+<text x="86" y="178" font-family="Arial, sans-serif" font-size="24" fill="#355070">截至 2026-06-06（Asia/Shanghai）| 分析窗口：未来 24-72 小时</text>
+<text x="86" y="220" class="body">本次共归一化并排序 3 个事件。</text><text x="86" y="270" class="body">所有事件字段都会保存在附录页和标准化 JSON 中。</text><text x="86" y="320" class="body">任何交易表达前，都要先确认情景触发条件和失效规则。</text>
+<text x="86" y="776" font-family="Arial, sans-serif" font-size="22" fill="#7d8597">本地备用信息图。配置 GPT Image 后可替换为生成图片。</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "title": "每日金融作战室测试",
+  "as_of": "2026-06-06",
+  "timezone": "Asia/Shanghai",
+  "window": "未来 24-72 小时",
+  "html": "/Volumes/Elements/SynologyDrive/SynologyDrive/交易/github_pages_deploy_site/index.html",
+  "slide_count": 8,
+  "image_model": "gpt-image-1.5",
+  "generated_images_requested": false,
+  "audio_manifest": "",
+  "embed_assets": true
+}

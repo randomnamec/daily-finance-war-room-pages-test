@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日金融作战室测试</title>
+  <style>
+    :root { --ink:#121826; --muted:#5c667a; --line:#d8dee9; --panel:#ffffff; --bg:#eef2f7; --accent:#1f7a8c; --warn:#b85c38; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Arial, "Helvetica Neue", sans-serif; }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; gap:16px; align-items:center; padding:10px 18px; background:#121826; color:white; }
+    .topbar strong { margin-right:auto; }
+    .topbar a { color:white; text-decoration:none; border:1px solid rgba(255,255,255,.3); padding:4px 8px; border-radius:4px; }
+    .deck { width:min(1280px, 96vw); margin:24px auto 80px; }
+    .slide { min-height:720px; margin:0 0 28px; padding:34px; background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:0 18px 50px rgba(18,24,38,.08); page-break-after:always; }
+    .slide-head { display:flex; gap:24px; justify-content:space-between; align-items:flex-start; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:22px; }
+    .kicker { margin:0 0 8px; color:var(--accent); font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+    h1 { margin:0; font-size:38px; line-height:1.12; letter-spacing:0; }
+    .subtitle { margin:10px 0 0; color:var(--muted); font-size:17px; line-height:1.45; }
+    .score { width:58px; height:58px; display:grid; place-items:center; color:white; background:var(--accent); border-radius:6px; font-weight:700; }
+    .layout { display:grid; grid-template-columns:minmax(380px, .95fr) 1.05fr; gap:24px; align-items:start; }
+    figure { margin:0; border:1px solid var(--line); border-radius:6px; overflow:hidden; background:#f8fafc; }
+    img { display:block; width:100%; height:auto; }
+    ul { margin:0 0 18px; padding-left:22px; font-size:19px; line-height:1.45; }
+    li { margin:0 0 10px; }
+    dl { display:grid; grid-template-columns:150px 1fr; gap:8px 14px; margin:0; font-size:14px; }
+    dt { color:var(--muted); font-weight:700; }
+    dd { margin:0; min-width:0; }
+    pre { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; font-family:Arial, "Helvetica Neue", sans-serif; line-height:1.35; }
+    .appendix .layout { grid-template-columns:1fr; }
+    .appendix figure { display:none; }
+    .appendix .content { max-height:520px; overflow:auto; border:1px solid var(--line); padding:16px; border-radius:6px; }
+    .audio { margin-top:18px; padding-top:14px; border-top:1px solid var(--line); }
+    audio { width:100%; }
+    .muted { color:var(--muted); margin:0; }
+    @media (max-width:900px) { .layout { grid-template-columns:1fr; } h1 { font-size:30px; } .slide { padding:22px; } }
+    @media print { .topbar { display:none; } .deck { width:100%; margin:0; } .slide { box-shadow:none; min-height:100vh; border:0; border-radius:0; } }
+  </style>
+</head>
+<body>
+  <nav class="topbar"><strong>每日金融作战室测试</strong><a href="#slide-001">1</a>
+<a href="#slide-002">2</a>
+<a href="#slide-003">3</a>
+<a href="#slide-004">4</a>
+<a href="#slide-005">5</a>
+<a href="#slide-006">6</a>
+<a href="#slide-007">7</a>
+<a href="#slide-008">8</a></nav>
+  <main class="deck">
+    <section class="slide cover" id="slide-001">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 001 页</p>
+      <h1>每日金融作战室测试</h1>
+      <p class="subtitle">截至 2026-06-06（Asia/Shanghai）| 分析窗口：未来 24-72 小时</p>
+    </div>
+    <div class="score">01</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7mr4/ml6Xph5Hono3kvZzmiJjlrqTmtYvor5U8L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+5oiq6IezIDIwMjYtMDYtMDbvvIhBc2lhL1NoYW5naGFp77yJfCDliIbmnpDnqpflj6PvvJrmnKrmnaUgMjQtNzIg5bCP5pe2PC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+5pys5qyh5YWx5b2S5LiA5YyW5bm25o6S5bqPIDMg5Liq5LqL5Lu244CCPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIyNzAiIGNsYXNzPSJib2R5Ij7miYDmnInkuovku7blrZfmrrXpg73kvJrkv53lrZjlnKjpmYTlvZXpobXlkozmoIflh4bljJYgSlNPTiDkuK3jgII8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPuS7u+S9leS6pOaYk+ihqOi+vuWJje+8jOmDveimgeWFiOehruiupOaDheaZr+inpuWPkeadoeS7tuWSjOWkseaViOinhOWImeOAgjwvdGV4dD4KPHRleHQgeD0iODYiIHk9Ijc3NiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmaWxsPSIjN2Q4NTk3Ij7mnKzlnLDlpIfnlKjkv6Hmga/lm77jgILphY3nva4gR1BUIEltYWdlIOWQjuWPr+abv+aNouS4uueUn+aIkOWbvueJh+OAgjwvdGV4dD4KPC9zdmc+" alt="每日金融作战室测试 infographic"></figure>
+    <div class="content">
+      <ul><li>本次共归一化并排序 3 个事件。</li>
+<li>所有事件字段都会保存在附录页和标准化 JSON 中。</li>
+<li>任何交易表达前，都要先确认情景触发条件和失效规则。</li></ul>
+      <dl><dt>最高评分事件</dt><dd><pre>FOMC 利率决议预告</pre></dd>
+<dt>时区</dt><dd><pre>Asia/Shanghai</pre></dd>
+<dt>窗口</dt><dd><pre>未来 24-72 小时</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide ranked" id="slide-002">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 002 页</p>
+      <h1>事件排序看板</h1>
+      <p class="subtitle">评分综合考虑重要性、来源质量、事件类别、传导渠道和资产覆盖面。</p>
+    </div>
+    <div class="score">02</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7kuovku7bmjpLluo/nnIvmnb88L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+6K+E5YiG57u85ZCI6ICD6JmR6YeN6KaB5oCn44CB5p2l5rqQ6LSo6YeP44CB5LqL5Lu257G75Yir44CB5Lyg5a+85rig6YGT5ZKM6LWE5Lqn6KaG55uW6Z2i44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+56ysIDEg5ZCN77yaRk9NQyDliKnnjoflhrPorq7pooTlkYogfCDor4TliIYgNzUgfCDnva7kv6HluqYg6auYPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIyNzAiIGNsYXNzPSJib2R5Ij7nrKwgMiDlkI3vvJrnvo7lm70gQ1BJIOmihOWRiumjjumZqSB8IOivhOWIhiA3MyB8IOe9ruS/oeW6piDpq5g8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPuesrCAzIOWQje+8muS4reWbvSA1IOaciOWkluaxh+WCqOWkhyB8IOivhOWIhiA1OSB8IOe9ruS/oeW6piDkuK08L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSI3NzYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzdkODU5NyI+5pys5Zyw5aSH55So5L+h5oGv5Zu+44CC6YWN572uIEdQVCBJbWFnZSDlkI7lj6/mm7/mjaLkuLrnlJ/miJDlm77niYfjgII8L3RleHQ+Cjwvc3ZnPg==" alt="事件排序看板 infographic"></figure>
+    <div class="content">
+      <ul><li>第 1 名：FOMC 利率决议预告 | 评分 75 | 置信度 高</li>
+<li>第 2 名：美国 CPI 预告风险 | 评分 73 | 置信度 高</li>
+<li>第 3 名：中国 5 月外汇储备 | 评分 59 | 置信度 中</li></ul>
+      <dl><dt>事件数量</dt><dd><pre>3</pre></dd>
+<dt>最高评分</dt><dd><pre>75</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide cross_asset" id="slide-003">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 003 页</p>
+      <h1>跨资产传导图</h1>
+      <p class="subtitle">从事件意外出发，映射到可观察、可交易的资产链条。</p>
+    </div>
+    <div class="score">03</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7ot6jotYTkuqfkvKDlr7zlm748L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+5LuO5LqL5Lu25oSP5aSW5Ye65Y+R77yM5pig5bCE5Yiw5Y+v6KeC5a+f44CB5Y+v5Lqk5piT55qE6LWE5Lqn6ZO+5p2h44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+Rk9NQyDliKnnjoflhrPorq7pooTlkYo6IOWIqeeOhywg5rGH546HLCDogqHnpajmjIfmlbAsIOS/oeeUqCwg5rOi5Yqo546HIC0mZ3Q7IOiBlOmCpuWfuumHkeacn+i0pywg576O5Zu9IDIg5bm05pyf5Zu95YC65pS255uK546HLCDnvo7lhYPmjIfmlbAsIOagh+aZriA1MDAsIOm7hOmHkTwvdGV4dD48dGV4dCB4PSI4NiIgeT0iMjcwIiBjbGFzcz0iYm9keSI+576O5Zu9IENQSSDpooTlkYrpo47pmak6IOWIqeeOhywg5rGH546HLCDogqHnpajmjIfmlbAsIOWVhuWTgSwg5rOi5Yqo546HIC0mZ3Q7IOe+juWbvSAyIOW5tOacn+WbveWAuuaUtuebiueOhywg576O5Zu9IDEwIOW5tOacn+WbveWAuuaUtuebiueOhywg576O5YWD5oyH5pWwLCDmoIfmma48L3RleHQ+PHRleHQgeD0iODYiIHk9IjMwNCIgY2xhc3M9ImJvZHkiPjUwMCwg57qz5pav6L6+5YWLIDEwMCwg6buE6YeRPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIzNTQiIGNsYXNzPSJib2R5Ij7kuK3lm70gNSDmnIjlpJbmsYflgqjlpIc6IOaxh+eOhywg6IKh56Wo5oyH5pWwLCDooYzkuJogLSZndDsg56a75bK45Lq65rCR5biBIENOSCwg5Zyo5bK45Lq65rCR5biBIENOWSwg5oGS55Sf5oyH5pWwLCDmsqrmt7EgMzAwPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iNzc2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiM3ZDg1OTciPuacrOWcsOWkh+eUqOS/oeaBr+WbvuOAgumFjee9riBHUFQgSW1hZ2Ug5ZCO5Y+v5pu/5o2i5Li655Sf5oiQ5Zu+54mH44CCPC90ZXh0Pgo8L3N2Zz4=" alt="跨资产传导图 infographic"></figure>
+    <div class="content">
+      <ul><li>FOMC 利率决议预告: 利率, 汇率, 股票指数, 信用, 波动率 -&gt; 联邦基金期货, 美国 2 年期国债收益率, 美元指数, 标普 500, 黄金</li>
+<li>美国 CPI 预告风险: 利率, 汇率, 股票指数, 商品, 波动率 -&gt; 美国 2 年期国债收益率, 美国 10 年期国债收益率, 美元指数, 标普 500, 纳斯达克 100, 黄金</li>
+<li>中国 5 月外汇储备: 汇率, 股票指数, 行业 -&gt; 离岸人民币 CNH, 在岸人民币 CNY, 恒生指数, 沪深 300</li></ul>
+      <dl><dt>行业</dt><dd><pre>[
+  &quot;REITs&quot;,
+  &quot;地产链&quot;,
+  &quot;小盘股&quot;,
+  &quot;港股成长股&quot;,
+  &quot;航空&quot;,
+  &quot;软件&quot;,
+  &quot;进口链&quot;,
+  &quot;银行&quot;,
+  &quot;长久期科技股&quot;,
+  &quot;黄金矿企&quot;
+]</pre></dd>
+<dt>资产</dt><dd><pre>[
+  &quot;在岸人民币 CNY&quot;,
+  &quot;恒生指数&quot;,
+  &quot;标普 500&quot;,
+  &quot;沪深 300&quot;,
+  &quot;离岸人民币 CNH&quot;,
+  &quot;纳斯达克 100&quot;,
+  &quot;美元指数&quot;,
+  &quot;美国 10 年期国债收益率&quot;,
+  &quot;美国 2 年期国债收益率&quot;,
+  &quot;联邦基金期货&quot;,
+  &quot;黄金&quot;
+]</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide event" id="slide-004">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 004 页</p>
+      <h1>FOMC 利率决议预告</h1>
+      <p class="subtitle">美国 | central_bank | 2026-06-17 | 评分 75</p>
+    </div>
+    <div class="score">04</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj5GT01DIOWIqeeOh+WGs+iurumihOWRijwvdGV4dD4KPHRleHQgeD0iODYiIHk9IjE3OCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzU1MDcwIj7nvo7lm70gfCBjZW50cmFsX2JhbmsgfCAyMDI2LTA2LTE3IHwg6K+E5YiGIDc1PC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+5Z+65YeG5oOF5pmv77yINTAl77yJ77ya5rKh5pyJ6YeN5aSn5oSP5aSW77yM57un57ut5by66LCD5pWw5o2u5L6d6LWW44CCPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIyNzAiIGNsYXNzPSJib2R5Ij7kuZDop4Lmg4Xmma/vvIgyNSXvvInvvJrngrnpmLXlm77miJblj5HluIPkvJrlj6PlvoTmr5TluILlnLrlrprku7fmm7TlgY/puL3mtL7jgII8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPuaCsuinguaDheaZr++8iDI1Je+8ie+8mueCuemYteWbvuaIluWPkeW4g+S8muWPo+W+hOavlOW4guWcuuWumuS7t+abtOWBj+m5sOa0vuOAgjwvdGV4dD48dGV4dCB4PSI4NiIgeT0iMzcwIiBjbGFzcz0iYm9keSI+5oSP5aSW6Kem5Y+R5p2h5Lu277ya54K56Zi15Zu+5Lit5L2N5pWw5Y+Y5YyWLCDlh7rnjrDmhI/lpJblj43lr7nnpagsIOmAmuiDgOaOqui+nuaYjuaYvuWPmOWMljwvdGV4dD4KPHRleHQgeD0iODYiIHk9Ijc3NiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmaWxsPSIjN2Q4NTk3Ij7mnKzlnLDlpIfnlKjkv6Hmga/lm77jgILphY3nva4gR1BUIEltYWdlIOWQjuWPr+abv+aNouS4uueUn+aIkOWbvueJh+OAgjwvdGV4dD4KPC9zdmc+" alt="FOMC 利率决议预告 infographic"></figure>
+    <div class="content">
+      <ul><li>基准情景（50%）：没有重大意外，继续强调数据依赖。</li>
+<li>乐观情景（25%）：点阵图或发布会口径比市场定价更偏鸽派。</li>
+<li>悲观情景（25%）：点阵图或发布会口径比市场定价更偏鹰派。</li>
+<li>意外触发条件：点阵图中位数变化, 出现意外反对票, 通胀措辞明显变化</li></ul>
+      <dl><dt>为什么重要</dt><dd><pre>点阵图和鲍威尔发布会可能重置政策利率分布，并影响风险偏好。</pre></dd>
+<dt>市场共识</dt><dd><pre>核对联邦基金期货和主要机构会前预期</pre></dd>
+<dt>前值</dt><dd><pre>以上一次官方目标利率区间为准</pre></dd>
+<dt>市场定价</dt><dd><pre>N/A</pre></dd>
+<dt>仓位/情绪</dt><dd><pre>N/A</pre></dd>
+<dt>传导渠道</dt><dd><pre>[
+  &quot;利率&quot;,
+  &quot;汇率&quot;,
+  &quot;股票指数&quot;,
+  &quot;信用&quot;,
+  &quot;波动率&quot;
+]</pre></dd>
+<dt>资产</dt><dd><pre>[
+  &quot;联邦基金期货&quot;,
+  &quot;美国 2 年期国债收益率&quot;,
+  &quot;美元指数&quot;,
+  &quot;标普 500&quot;,
+  &quot;黄金&quot;
+]</pre></dd>
+<dt>行业</dt><dd><pre>[
+  &quot;银行&quot;,
+  &quot;软件&quot;,
+  &quot;REITs&quot;,
+  &quot;小盘股&quot;
+]</pre></dd>
+<dt>公司</dt><dd><pre>[]</pre></dd>
+<dt>来源</dt><dd><pre>https://www.federalreserve.gov/monetarypolicy.htm</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide event" id="slide-005">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 005 页</p>
+      <h1>美国 CPI 预告风险</h1>
+      <p class="subtitle">美国 | macro_data | 2026-06-10 | 评分 73</p>
+    </div>
+    <div class="score">05</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7nvo7lm70gQ1BJIOmihOWRiumjjumZqTwvdGV4dD4KPHRleHQgeD0iODYiIHk9IjE3OCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzU1MDcwIj7nvo7lm70gfCBtYWNyb19kYXRhIHwgMjAyNi0wNi0xMCB8IOivhOWIhiA3MzwvdGV4dD4KPHRleHQgeD0iODYiIHk9IjIyMCIgY2xhc3M9ImJvZHkiPuWfuuWHhuaDheaZr++8iDUwJe+8ie+8mkNQSSDmjqXov5HlhbHor4bvvIxGT01DIOWJjeW4guWcuumHjeaWsOWumuS7t+aciemZkOOAgjwvdGV4dD48dGV4dCB4PSI4NiIgeT0iMjcwIiBjbGFzcz0iYm9keSI+5LmQ6KeC5oOF5pmv77yIMjUl77yJ77ya5qC45b+DIENQSSDkvY7kuo7lhbHor4bvvIzkvY/miL/lkozmnI3liqHpgJrog4DpmY3muKnjgII8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPuaCsuinguaDheaZr++8iDI1Je+8ie+8muaguOW/gyBDUEkg6auY5LqO5YWx6K+G77yM5pyN5Yqh6YCa6IOA6YeN5paw5Yqg6YCf44CCPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIzNzAiIGNsYXNzPSJib2R5Ij7mhI/lpJbop6blj5HmnaHku7bvvJrmoLjlv4MgQ1BJIOWBj+emu+WFseivhuiHs+WwkSAwLjEg5Liq55m+5YiG54K5LCDliZTpmaTkvY/miL/lkI7nmoTmnI3liqHpgJrog4DliqDpgJ8sIOWIqeeOh+acn+i0p+mHjeaWsOWumuS7t+acquadpeS4pOasoeS8muiurjwvdGV4dD4KPHRleHQgeD0iODYiIHk9Ijc3NiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmaWxsPSIjN2Q4NTk3Ij7mnKzlnLDlpIfnlKjkv6Hmga/lm77jgILphY3nva4gR1BUIEltYWdlIOWQjuWPr+abv+aNouS4uueUn+aIkOWbvueJh+OAgjwvdGV4dD4KPC9zdmc+" alt="美国 CPI 预告风险 infographic"></figure>
+    <div class="content">
+      <ul><li>基准情景（50%）：CPI 接近共识，FOMC 前市场重新定价有限。</li>
+<li>乐观情景（25%）：核心 CPI 低于共识，住房和服务通胀降温。</li>
+<li>悲观情景（25%）：核心 CPI 高于共识，服务通胀重新加速。</li>
+<li>意外触发条件：核心 CPI 偏离共识至少 0.1 个百分点, 剔除住房后的服务通胀加速, 利率期货重新定价未来两次会议</li></ul>
+      <dl><dt>为什么重要</dt><dd><pre>通胀意外会重新定价美联储路径、实际利率、成长股估值、美元和黄金。</pre></dd>
+<dt>市场共识</dt><dd><pre>发布前核对 BLS 与经济学家共识</pre></dd>
+<dt>前值</dt><dd><pre>核对 BLS 前值</pre></dd>
+<dt>市场定价</dt><dd><pre>N/A</pre></dd>
+<dt>仓位/情绪</dt><dd><pre>N/A</pre></dd>
+<dt>传导渠道</dt><dd><pre>[
+  &quot;利率&quot;,
+  &quot;汇率&quot;,
+  &quot;股票指数&quot;,
+  &quot;商品&quot;,
+  &quot;波动率&quot;
+]</pre></dd>
+<dt>资产</dt><dd><pre>[
+  &quot;美国 2 年期国债收益率&quot;,
+  &quot;美国 10 年期国债收益率&quot;,
+  &quot;美元指数&quot;,
+  &quot;标普 500&quot;,
+  &quot;纳斯达克 100&quot;,
+  &quot;黄金&quot;
+]</pre></dd>
+<dt>行业</dt><dd><pre>[
+  &quot;长久期科技股&quot;,
+  &quot;银行&quot;,
+  &quot;地产链&quot;,
+  &quot;黄金矿企&quot;
+]</pre></dd>
+<dt>公司</dt><dd><pre>[]</pre></dd>
+<dt>来源</dt><dd><pre>https://www.bls.gov/schedule/news_release/cpi.htm</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide event" id="slide-006">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 006 页</p>
+      <h1>中国 5 月外汇储备</h1>
+      <p class="subtitle">中国 | macro_data | 2026-06-07 待定 | 评分 59</p>
+    </div>
+    <div class="score">06</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7kuK3lm70gNSDmnIjlpJbmsYflgqjlpIc8L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+5Lit5Zu9IHwgbWFjcm9fZGF0YSB8IDIwMjYtMDYtMDcg5b6F5a6aIHwg6K+E5YiGIDU5PC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+5Z+65YeG5oOF5pmv77yINDUl77yJ77ya5aSW5YKo5o6l6L+R5biC5Zy65YWx6K+G77yM5a+55biC5Zy65b2x5ZON5pyJ6ZmQ44CCPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIyNzAiIGNsYXNzPSJib2R5Ij7kuZDop4Lmg4Xmma/vvIgzMCXvvInvvJrlpJblgqjpq5jkuo7pooTmnJ/vvIzkuJTlop7plb/kuI3og73lrozlhajnlLHkvLDlgLzmlYjlupTop6Pph4rvvIzor7TmmI7otYTph5HmtYHljovlipvmuKnlkozjgII8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPuaCsuinguaDheaZr++8iDI1Je+8ie+8muWkluWCqOS9juS6jumihOacn++8jOW5tuS8tOmaj+S6uuawkeW4geS4remXtOS7t+WBj+W8seaIlui1hOmHkea1geWHuuaLheW/p+OAgjwvdGV4dD48dGV4dCB4PSI4NiIgeT0iMzcwIiBjbGFzcz0iYm9keSI+5oSP5aSW6Kem5Y+R5p2h5Lu277ya5pi+6JGX5L2O5LqO5YWx6K+GLCDmmL7okZfpq5jkuo7lhbHor4bkuJTkuI3og73nlLHkvLDlgLzmlYjlupTop6Pph4osIOWumOaWueWvuei3qOWig+i1hOmHkea1geS9nOWHuuWQjue7reihqOaAgTwvdGV4dD4KPHRleHQgeD0iODYiIHk9Ijc3NiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmaWxsPSIjN2Q4NTk3Ij7mnKzlnLDlpIfnlKjkv6Hmga/lm77jgILphY3nva4gR1BUIEltYWdlIOWQjuWPr+abv+aNouS4uueUn+aIkOWbvueJh+OAgjwvdGV4dD4KPC9zdmc+" alt="中国 5 月外汇储备 infographic"></figure>
+    <div class="content">
+      <ul><li>基准情景（45%）：外储接近市场共识，对市场影响有限。</li>
+<li>乐观情景（30%）：外储高于预期，且增长不能完全由估值效应解释，说明资金流压力温和。</li>
+<li>悲观情景（25%）：外储低于预期，并伴随人民币中间价偏弱或资金流出担忧。</li>
+<li>意外触发条件：显著低于共识, 显著高于共识且不能由估值效应解释, 官方对跨境资金流作出后续表态</li></ul>
+      <dl><dt>为什么重要</dt><dd><pre>外汇储备会影响市场对人民币稳定性和跨境资金流压力的判断。</pre></dd>
+<dt>市场共识</dt><dd><pre>3.42 万亿美元</pre></dd>
+<dt>前值</dt><dd><pre>3.411 万亿美元</pre></dd>
+<dt>市场定价</dt><dd><pre>周末发布，现金市场即时流动性有限，重点观察下一个交易日的人民币和港股反应。</pre></dd>
+<dt>仓位/情绪</dt><dd><pre>更适合作为人民币信心指标，而不是单独的指数交易信号。</pre></dd>
+<dt>传导渠道</dt><dd><pre>[
+  &quot;汇率&quot;,
+  &quot;股票指数&quot;,
+  &quot;行业&quot;
+]</pre></dd>
+<dt>资产</dt><dd><pre>[
+  &quot;离岸人民币 CNH&quot;,
+  &quot;在岸人民币 CNY&quot;,
+  &quot;恒生指数&quot;,
+  &quot;沪深 300&quot;
+]</pre></dd>
+<dt>行业</dt><dd><pre>[
+  &quot;航空&quot;,
+  &quot;进口链&quot;,
+  &quot;港股成长股&quot;
+]</pre></dd>
+<dt>公司</dt><dd><pre>[
+  &quot;人民币敏感航空公司&quot;,
+  &quot;港股成长型公司&quot;
+]</pre></dd>
+<dt>来源</dt><dd><pre>https://tradingeconomics.com/china/foreign-exchange-reserves</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide debate" id="slide-007">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 007 页</p>
+      <h1>观点辩论与风险控制</h1>
+      <p class="subtitle">正面观点、非正面观点、综合判断和失效模式。</p>
+    </div>
+    <div class="score">07</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7op4LngrnovqnorrrkuI7po47pmanmjqfliLY8L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+5q2j6Z2i6KeC54K544CB6Z2e5q2j6Z2i6KeC54K544CB57u85ZCI5Yik5pat5ZKM5aSx5pWI5qih5byP44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+5q2j6Z2i77ya5LqL5Lu257uT5p6c5ZKM6aaW5Liq5rWB5Yqo5biC5Zy65Y+N5bqU5b+F6aG755u45LqS56Gu6K6k44CCPC90ZXh0Pjx0ZXh0IHg9Ijg2IiB5PSIyNzAiIGNsYXNzPSJib2R5Ij7pnZ7mraPpnaLvvJrlhbHor4bov4fmnJ/jgIHku5PkvY3mi6XmjKTjgIHmnaXmupDotKjph4/lvLHmiJbmlL/nrZblr7nlhrLpg73lj6/og73lj43ovazkuqTmmJPjgII8L3RleHQ+PHRleHQgeD0iODYiIHk9IjMyMCIgY2xhc3M9ImJvZHkiPue7vOWQiO+8muWPquacieW9k+aEj+WkluOAgeS8oOWvvOWSjOS7t+agvOihjOS4uuWQjOWQkeaXtu+8jOaJjeiAg+iZkeihqOi+vuingueCueOAgjwvdGV4dD48dGV4dCB4PSI4NiIgeT0iMzcwIiBjbGFzcz0iYm9keSI+5LiN5Lqk5piT77ya5rWB5Yqo5oCn5beu77yM5oiW5LqL5Lu25bey57uP6KKr5YWF5YiG5a6a5Lu35pe277yM5a6B5Y+v562J5b6F44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iNzc2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiM3ZDg1OTciPuacrOWcsOWkh+eUqOS/oeaBr+WbvuOAgumFjee9riBHUFQgSW1hZ2Ug5ZCO5Y+v5pu/5o2i5Li655Sf5oiQ5Zu+54mH44CCPC90ZXh0Pgo8L3N2Zz4=" alt="观点辩论与风险控制 infographic"></figure>
+    <div class="content">
+      <ul><li>正面：事件结果和首个流动市场反应必须相互确认。</li>
+<li>非正面：共识过期、仓位拥挤、来源质量弱或政策对冲都可能反转交易。</li>
+<li>综合：只有当意外、传导和价格行为同向时，才考虑表达观点。</li>
+<li>不交易：流动性差，或事件已经被充分定价时，宁可等待。</li></ul>
+      <dl><dt>风控检查</dt><dd><pre>来源、定价、仓位、流动性、相关性失效</pre></dd>
+<dt>规则</dt><dd><pre>每个观点都必须有触发条件和失效条件</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section><section class="slide appendix" id="slide-008">
+  <div class="slide-head">
+    <div>
+      <p class="kicker">每日金融作战室 | 第 008 页</p>
+      <h1>完整数据附录</h1>
+      <p class="subtitle">完整标准化事件数据。本页内容较多，允许滚动查看。</p>
+    </div>
+    <div class="score">08</div>
+  </div>
+  <div class="layout">
+    <figure><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTM2IiBoZWlnaHQ9Ijg2NCIgdmlld0JveD0iMCAwIDE1MzYgODY0Ij4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iODY0IiBmaWxsPSIjZjZmOGZiIi8+CjxyZWN0IHg9IjQ4IiB5PSI0NCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iNzc2IiByeD0iMTgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Q2ZGRlOCIvPgo8cmVjdCB4PSI0OCIgeT0iNDQiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9Ijk2IiByeD0iMTgiIGZpbGw9IiMxNDIxM2QiLz4KPHRleHQgeD0iODYiIHk9IjEwNiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj7lrozmlbTmlbDmja7pmYTlvZU8L3RleHQ+Cjx0ZXh0IHg9Ijg2IiB5PSIxNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM1NTA3MCI+5a6M5pW05qCH5YeG5YyW5LqL5Lu25pWw5o2u44CC5pys6aG15YaF5a656L6D5aSa77yM5YWB6K645rua5Yqo5p+l55yL44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iMjIwIiBjbGFzcz0iYm9keSI+5omA5pyJ5qCH5YeG5YyW5a2X5q616YO95L+d5a2Y5Zyo5LiL5pa55ZKMIGV2ZW50cy5ub3JtYWxpemVkLmpzb24g5Lit44CCPC90ZXh0Pgo8dGV4dCB4PSI4NiIgeT0iNzc2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiM3ZDg1OTciPuacrOWcsOWkh+eUqOS/oeaBr+WbvuOAgumFjee9riBHUFQgSW1hZ2Ug5ZCO5Y+v5pu/5o2i5Li655Sf5oiQ5Zu+54mH44CCPC90ZXh0Pgo8L3N2Zz4=" alt="完整数据附录 infographic"></figure>
+    <div class="content">
+      <ul><li>所有标准化字段都保存在下方和 events.normalized.json 中。</li></ul>
+      <dl><dt>events.normalized.json</dt><dd><pre>[
+  {
+    &quot;title&quot;: &quot;FOMC 利率决议预告&quot;,
+    &quot;date&quot;: &quot;2026-06-17&quot;,
+    &quot;time_local&quot;: &quot;&quot;,
+    &quot;region&quot;: &quot;美国&quot;,
+    &quot;category&quot;: &quot;central_bank&quot;,
+    &quot;importance&quot;: 5,
+    &quot;source_quality&quot;: 5,
+    &quot;score&quot;: 75,
+    &quot;confidence&quot;: &quot;高&quot;,
+    &quot;consensus&quot;: &quot;核对联邦基金期货和主要机构会前预期&quot;,
+    &quot;previous&quot;: &quot;以上一次官方目标利率区间为准&quot;,
+    &quot;assets&quot;: [
+      &quot;联邦基金期货&quot;,
+      &quot;美国 2 年期国债收益率&quot;,
+      &quot;美元指数&quot;,
+      &quot;标普 500&quot;,
+      &quot;黄金&quot;
+    ],
+    &quot;source&quot;: &quot;美联储&quot;,
+    &quot;source_url&quot;: &quot;https://www.federalreserve.gov/monetarypolicy.htm&quot;,
+    &quot;why_it_matters&quot;: &quot;点阵图和鲍威尔发布会可能重置政策利率分布，并影响风险偏好。&quot;,
+    &quot;market_pricing&quot;: &quot;&quot;,
+    &quot;positioning&quot;: &quot;&quot;,
+    &quot;bull_case&quot;: &quot;点阵图或发布会口径比市场定价更偏鸽派。&quot;,
+    &quot;base_case&quot;: &quot;没有重大意外，继续强调数据依赖。&quot;,
+    &quot;bear_case&quot;: &quot;点阵图或发布会口径比市场定价更偏鹰派。&quot;,
+    &quot;surprise_triggers&quot;: [
+      &quot;点阵图中位数变化&quot;,
+      &quot;出现意外反对票&quot;,
+      &quot;通胀措辞明显变化&quot;
+    ],
+    &quot;channels&quot;: [
+      &quot;利率&quot;,
+      &quot;汇率&quot;,
+      &quot;股票指数&quot;,
+      &quot;信用&quot;,
+      &quot;波动率&quot;
+    ],
+    &quot;sectors&quot;: [
+      &quot;银行&quot;,
+      &quot;软件&quot;,
+      &quot;REITs&quot;,
+      &quot;小盘股&quot;
+    ],
+    &quot;companies&quot;: [],
+    &quot;horizon&quot;: &quot;1-4 周&quot;,
+    &quot;status&quot;: &quot;scheduled&quot;,
+    &quot;actual_result&quot;: &quot;&quot;,
+    &quot;surprise_direction&quot;: &quot;&quot;,
+    &quot;market_reaction&quot;: &quot;&quot;,
+    &quot;price_action&quot;: &quot;&quot;,
+    &quot;lesson&quot;: &quot;&quot;,
+    &quot;policy_readthrough&quot;: &quot;&quot;,
+    &quot;positive_plan&quot;: &quot;&quot;,
+    &quot;negative_plan&quot;: &quot;&quot;,
+    &quot;watch_items&quot;: []
+  },
+  {
+    &quot;title&quot;: &quot;美国 CPI 预告风险&quot;,
+    &quot;date&quot;: &quot;2026-06-10&quot;,
+    &quot;time_local&quot;: &quot;&quot;,
+    &quot;region&quot;: &quot;美国&quot;,
+    &quot;category&quot;: &quot;macro_data&quot;,
+    &quot;importance&quot;: 5,
+    &quot;source_quality&quot;: 5,
+    &quot;score&quot;: 73,
+    &quot;confidence&quot;: &quot;高&quot;,
+    &quot;consensus&quot;: &quot;发布前核对 BLS 与经济学家共识&quot;,
+    &quot;previous&quot;: &quot;核对 BLS 前值&quot;,
+    &quot;assets&quot;: [
+      &quot;美国 2 年期国债收益率&quot;,
+      &quot;美国 10 年期国债收益率&quot;,
+      &quot;美元指数&quot;,
+      &quot;标普 500&quot;,
+      &quot;纳斯达克 100&quot;,
+      &quot;黄金&quot;
+    ],
+    &quot;source&quot;: &quot;美国劳工统计局 BLS&quot;,
+    &quot;source_url&quot;: &quot;https://www.bls.gov/schedule/news_release/cpi.htm&quot;,
+    &quot;why_it_matters&quot;: &quot;通胀意外会重新定价美联储路径、实际利率、成长股估值、美元和黄金。&quot;,
+    &quot;market_pricing&quot;: &quot;&quot;,
+    &quot;positioning&quot;: &quot;&quot;,
+    &quot;bull_case&quot;: &quot;核心 CPI 低于共识，住房和服务通胀降温。&quot;,
+    &quot;base_case&quot;: &quot;CPI 接近共识，FOMC 前市场重新定价有限。&quot;,
+    &quot;bear_case&quot;: &quot;核心 CPI 高于共识，服务通胀重新加速。&quot;,
+    &quot;surprise_triggers&quot;: [
+      &quot;核心 CPI 偏离共识至少 0.1 个百分点&quot;,
+      &quot;剔除住房后的服务通胀加速&quot;,
+      &quot;利率期货重新定价未来两次会议&quot;
+    ],
+    &quot;channels&quot;: [
+      &quot;利率&quot;,
+      &quot;汇率&quot;,
+      &quot;股票指数&quot;,
+      &quot;商品&quot;,
+      &quot;波动率&quot;
+    ],
+    &quot;sectors&quot;: [
+      &quot;长久期科技股&quot;,
+      &quot;银行&quot;,
+      &quot;地产链&quot;,
+      &quot;黄金矿企&quot;
+    ],
+    &quot;companies&quot;: [],
+    &quot;horizon&quot;: &quot;1-3 天&quot;,
+    &quot;status&quot;: &quot;scheduled&quot;,
+    &quot;actual_result&quot;: &quot;&quot;,
+    &quot;surprise_direction&quot;: &quot;&quot;,
+    &quot;market_reaction&quot;: &quot;&quot;,
+    &quot;price_action&quot;: &quot;&quot;,
+    &quot;lesson&quot;: &quot;&quot;,
+    &quot;policy_readthrough&quot;: &quot;&quot;,
+    &quot;positive_plan&quot;: &quot;&quot;,
+    &quot;negative_plan&quot;: &quot;&quot;,
+    &quot;watch_items&quot;: []
+  },
+  {
+    &quot;title&quot;: &quot;中国 5 月外汇储备&quot;,
+    &quot;date&quot;: &quot;2026-06-07&quot;,
+    &quot;time_local&quot;: &quot;待定&quot;,
+    &quot;region&quot;: &quot;中国&quot;,
+    &quot;category&quot;: &quot;macro_data&quot;,
+    &quot;importance&quot;: 4,
+    &quot;source_quality&quot;: 4,
+    &quot;score&quot;: 59,
+    &quot;confidence&quot;: &quot;中&quot;,
+    &quot;consensus&quot;: &quot;3.42 万亿美元&quot;,
+    &quot;previous&quot;: &quot;3.411 万亿美元&quot;,
+    &quot;assets&quot;: [
+      &quot;离岸人民币 CNH&quot;,
+      &quot;在岸人民币 CNY&quot;,
+      &quot;恒生指数&quot;,
+      &quot;沪深 300&quot;
+    ],
+    &quot;source&quot;: &quot;国家外汇管理局 / Trading Economics&quot;,
+    &quot;source_url&quot;: &quot;https://tradingeconomics.com/china/foreign-exchange-reserves&quot;,
+    &quot;why_it_matters&quot;: &quot;外汇储备会影响市场对人民币稳定性和跨境资金流压力的判断。&quot;,
+    &quot;market_pricing&quot;: &quot;周末发布，现金市场即时流动性有限，重点观察下一个交易日的人民币和港股反应。&quot;,
+    &quot;positioning&quot;: &quot;更适合作为人民币信心指标，而不是单独的指数交易信号。&quot;,
+    &quot;bull_case&quot;: &quot;外储高于预期，且增长不能完全由估值效应解释，说明资金流压力温和。&quot;,
+    &quot;base_case&quot;: &quot;外储接近市场共识，对市场影响有限。&quot;,
+    &quot;bear_case&quot;: &quot;外储低于预期，并伴随人民币中间价偏弱或资金流出担忧。&quot;,
+    &quot;surprise_triggers&quot;: [
+      &quot;显著低于共识&quot;,
+      &quot;显著高于共识且不能由估值效应解释&quot;,
+      &quot;官方对跨境资金流作出后续表态&quot;
+    ],
+    &quot;channels&quot;: [
+      &quot;汇率&quot;,
+      &quot;股票指数&quot;,
+      &quot;行业&quot;
+    ],
+    &quot;sectors&quot;: [
+      &quot;航空&quot;,
+      &quot;进口链&quot;,
+      &quot;港股成长股&quot;
+    ],
+    &quot;companies&quot;: [
+      &quot;人民币敏感航空公司&quot;,
+      &quot;港股成长型公司&quot;
+    ],
+    &quot;horizon&quot;: &quot;1-3 天&quot;,
+    &quot;status&quot;: &quot;scheduled&quot;,
+    &quot;actual_result&quot;: &quot;&quot;,
+    &quot;surprise_direction&quot;: &quot;&quot;,
+    &quot;market_reaction&quot;: &quot;&quot;,
+    &quot;price_action&quot;: &quot;&quot;,
+    &quot;lesson&quot;: &quot;&quot;,
+    &quot;policy_readthrough&quot;: &quot;&quot;,
+    &quot;positive_plan&quot;: &quot;&quot;,
+    &quot;negative_plan&quot;: &quot;&quot;,
+    &quot;watch_items&quot;: []
+  }
+]</pre></dd></dl>
+    </div>
+  </div>
+  <div class="audio"><p class="muted">音频待生成。请先用 Voicebox 生成逐页旁白，再通过 --audio-manifest 重建 HTML。</p></div>
+</section>
+  </main>
+</body>
+</html>

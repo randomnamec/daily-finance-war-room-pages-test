@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f6f8fb"/>
+<rect x="48" y="44" width="1440" height="776" rx="18" fill="#ffffff" stroke="#d6dde8"/>
+<rect x="48" y="44" width="1440" height="96" rx="18" fill="#14213d"/>
+<text x="86" y="106" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">事件排序看板</text>
+<text x="86" y="178" font-family="Arial, sans-serif" font-size="24" fill="#355070">评分综合考虑重要性、来源质量、事件类别、传导渠道和资产覆盖面。</text>
+<text x="86" y="220" class="body">第 1 名：FOMC 利率决议预告 | 评分 75 | 置信度 高</text><text x="86" y="270" class="body">第 2 名：美国 CPI 预告风险 | 评分 73 | 置信度 高</text><text x="86" y="320" class="body">第 3 名：中国 5 月外汇储备 | 评分 59 | 置信度 中</text>
+<text x="86" y="776" font-family="Arial, sans-serif" font-size="22" fill="#7d8597">本地备用信息图。配置 GPT Image 后可替换为生成图片。</text>
+</svg>

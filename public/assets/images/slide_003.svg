@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864">
+<rect width="1536" height="864" fill="#f6f8fb"/>
+<rect x="48" y="44" width="1440" height="776" rx="18" fill="#ffffff" stroke="#d6dde8"/>
+<rect x="48" y="44" width="1440" height="96" rx="18" fill="#14213d"/>
+<text x="86" y="106" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">跨资产传导图</text>
+<text x="86" y="178" font-family="Arial, sans-serif" font-size="24" fill="#355070">从事件意外出发，映射到可观察、可交易的资产链条。</text>
+<text x="86" y="220" class="body">FOMC 利率决议预告: 利率, 汇率, 股票指数, 信用, 波动率 -&gt; 联邦基金期货, 美国 2 年期国债收益率, 美元指数, 标普 500, 黄金</text><text x="86" y="270" class="body">美国 CPI 预告风险: 利率, 汇率, 股票指数, 商品, 波动率 -&gt; 美国 2 年期国债收益率, 美国 10 年期国债收益率, 美元指数, 标普</text><text x="86" y="304" class="body">500, 纳斯达克 100, 黄金</text><text x="86" y="354" class="body">中国 5 月外汇储备: 汇率, 股票指数, 行业 -&gt; 离岸人民币 CNH, 在岸人民币 CNY, 恒生指数, 沪深 300</text>
+<text x="86" y="776" font-family="Arial, sans-serif" font-size="22" fill="#7d8597">本地备用信息图。配置 GPT Image 后可替换为生成图片。</text>
+</svg>
